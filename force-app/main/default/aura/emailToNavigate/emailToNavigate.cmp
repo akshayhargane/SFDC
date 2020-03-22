@@ -1,0 +1,8 @@
+<aura:component implements="lightning:isUrlAddressable" access="global">
+    <aura:attribute type="String" name="recId"/>
+    <aura:attribute type="String" name="emailTempId"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="slds-m-around_x-small">
+        <c:emailTemplateLWC recordId="{!v.recId}" emailTempId="{!v.emailTempId}"/>
+    </div>
+</aura:component>

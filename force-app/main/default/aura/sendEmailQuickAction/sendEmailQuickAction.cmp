@@ -1,0 +1,3 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId">
+    <c:emailTemplateIconLWC  recordId="{!v.recordId}" onclose="{!c.handleClose}" />
+</aura:component>
